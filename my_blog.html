@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>My Personal Blog</title>
-  </head>
-  <body>
-    <header>
-      <h1>My Personal Blog</h1>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="stories.html">Stories</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- New: main with an h2 -->
-    <main>
-      <h2>Latest Posts</h2>
-      <!-- Din bloggs innehåll kommer här -->
-    </main>
-
-    <!-- New: footer with ul + li links -->
-    <footer>
+<head>
+  <meta charset="UTF-8" />
+  <title>My Personal Blog</title>
+</head>
+<body>
+  <header>
+    <h1>My Personal Blog</h1>
+    <nav>
       <ul>
-        <li><a href="archive.html">Archive</a></li>
-        <li><a href="legal.html">Legal</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stories">Stories</a></li>
       </ul>
-    </footer>
-  </body>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section: About -->
+    <section id="about">
+      <h2>About</h2>
+      <article>
+        <p>Hello! I’m Mohammadreza, a student exploring web development and cybersecurity.
+           I share mini-projects, study notes, and things I learn along the way.
+           This blog is my place to practice clean, semantic HTML and simple UX.</p>
+      </article>
+    </section>
+
+    <!-- Section: Stories -->
+    <section id="stories">
+      <h2>Stories</h2>
+
+      <article>
+        <h3>Building My First Forms</h3>
+        <p>I started with basic inputs and validation using required, minlength, and maxlength.
+           Connecting the form to a simple GET action helped me understand how data moves.</p>
+      </article>
+
+      <article>
+        <h3>From Div Soup to Semantics</h3>
+        <p>Replacing generic divs with header, nav, main, section, and article
+           made the structure clearer and more accessible—screen readers love it!</p>
+      </article>
+
+      <article>
+        <h3>Pushing to GitHub</h3>
+        <p>Initialized a repo, committed my files, set the remote, and pushed to main.
+           Version control makes iterating on these pages so much easier.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#archive">Archive</a></li>
+      <li><a href="#legal">Legal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </footer>
+</body>
 </html>
