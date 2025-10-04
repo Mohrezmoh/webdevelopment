@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Min personliga blogg</title>
+
+  <!-- Style enligt uppgiften -->
+  <style>
+    * { margin: 0; padding: 0; }
+    li { display: inline; }
+    hr { width: 95%; margin: auto; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; padding: 16px; }
+    header, footer { padding: 12px 0; }
+    header h1 { margin-bottom: 8px; }
+    nav ul li { margin-right: 12px; }
+    main { max-width: 900px; margin: 0 auto; }
+    section { margin: 16px 0; }
+    article { margin: 8px 0; }
+    figure { margin: 8px 0; text-align: center; }
+    figcaption { font-size: 0.9rem; opacity: 0.85; margin-top: 6px; }
+    p { margin: 8px 0; }
+    h2 { margin: 10px 0; }
+    h3 { margin: 8px 0; }
+    footer ul li { margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Min personliga blogg</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Om</a></li>
+        <li><a href="#stories">Berättelser</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section: About -->
+    <section id="about">
+      <h2>Om</h2>
+      <article>
+        <p>Hej! Jag är Mohammadreza, en student som utforskar webbutveckling och cybersäkerhet.
+           Här delar jag små projekt, anteckningar och lärdomar. Den här bloggen är min plats
+           för att öva semantisk HTML och enkel UX.</p>
+
+        <figure>
+          <img src="https://picsum.photos/seed/about/900/360"
+               alt="Illustrativ bild som representerar bloggförfattaren och kodning" />
+          <figcaption>Bakom kulisserna när jag bygger och lär mig nytt.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!-- Section: Stories -->
+    <section id="stories">
+      <h2>Berättelser</h2>
+
+      <article>
+        <h3>Mitt första formulär</h3>
+        <p>Jag började med enkla <em>input</em>-fält och validering via <code>required</code>,
+           <code>minlength</code> och <code>maxlength</code>. En enkel GET-sökning hjälpte mig
+           att förstå hur data skickas.</p>
+
+        <figure>
+          <img src="https://picsum.photos/seed/forms/900/360"
+               alt="Exempelbild av ett HTML-formulär" />
+          <figcaption>Första formuläret med grundläggande validering.</figcaption>
+        </figure>
+      </article>
+
+      <br>
+      <hr style="width:95%">
+      <br>
+
+      <article>
+        <h3>Från div-soppa till semantik</h3>
+        <p>Genom att ersätta generiska <code>div</code> med <code>header</code>, <code>nav</code>,
+           <code>main</code>, <code>section</code> och <code>article</code> blev strukturen tydligare
+           och mer tillgänglig – skärmläsare tackar!</p>
+
+        <figure>
+          <img src="https://picsum.photos/seed/semantics/900/360"
+               alt="Grafik som illustrerar semantiska HTML5-element" />
+          <figcaption>Semantisk struktur = bättre tillgänglighet och SEO.</figcaption>
+        </figure>
+      </article>
+
+      <br>
+      <hr style="width:95%">
+      <br>
+
+      <article>
+        <h3>Första pushen till GitHub</h3>
+        <p>Jag initierade ett repo, committade filer, satte remote och pushade till <code>main</code>.
+           Versionshantering gör det lätt att iterera och hålla koll på ändringar.</p>
+
+        <figure>
+          <img src="https://picsum.photos/seed/github/900/360"
+               alt="Terminalvy med git-kommandon och push" />
+          <figcaption>Git + GitHub = bättre workflow och historik.</figcaption>
+        </figure>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#archive">Arkiv</a></li>
+      <li><a href="#legal">Juridik</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
