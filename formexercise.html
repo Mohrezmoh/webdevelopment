@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welp! - Submit Your Review</title>
+</head>
+<body>
+  <h1>Welcome to Welp!</h1>
+  <p>Review anything you like – books, films, parks, or more!</p>
+
+  <form>
+    <!-- Reviewer's Name -->
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <!-- What they're reviewing -->
+    <label for="subject">What are you reviewing?</label><br>
+    <input type="text" id="subject" name="subject" required>
+    <br><br>
+
+    <!-- Radio buttons: Would you try again? -->
+    <p>Would you try again?</p>
+    <input type="radio" id="yes" name="try_again" value="yes" required>
+    <label for="yes">Yes</label><br>
+
+    <input type="radio" id="no" name="try_again" value="no">
+    <label for="no">No</label><br>
+
+    <input type="radio" id="maybe" name="try_again" value="maybe">
+    <label for="maybe">Maybe</label><br><br>
+
+    <!-- Rating -->
+    <label for="rating">Give us a rating (1–5):</label><br>
+    <input type="number" id="rating" name="rating" min="1" max="5" required>
+    <br><br>
+
+    <!-- Comments -->
+    <label for="comments">Write your comments (max 250 characters):</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="40" maxlength="250"></textarea>
+    <br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit Review">
+  </form>
+</body>
+</html>
+
