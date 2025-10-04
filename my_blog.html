@@ -1,61 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>My Personal Blog</title>
-</head>
-<body>
-  <header>
-    <h1>My Personal Blog</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#stories">Stories</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Section: About -->
+<section id="about">
+  <h2>About</h2>
+  <article>
+    <p>Hello! I’m Mohammadreza, a student exploring web development and cybersecurity.
+       I share mini-projects, study notes, and things I learn along the way.
+       This blog is my place to practice clean, semantic HTML and simple UX.</p>
 
-  <main>
-    <!-- Section: About -->
-    <section id="about">
-      <h2>About</h2>
-      <article>
-        <p>Hello! I’m Mohammadreza, a student exploring web development and cybersecurity.
-           I share mini-projects, study notes, and things I learn along the way.
-           This blog is my place to practice clean, semantic HTML and simple UX.</p>
-      </article>
-    </section>
+    <!-- NEW: figure inside the About article -->
+    <figure>
+      <img src="https://picsum.photos/seed/about/800/360"
+           alt="Porträttliknande bild som representerar bloggförfattaren">
+      <figcaption>Behind the scenes när jag bygger och lär mig nytt.</figcaption>
+    </figure>
+  </article>
+</section>
 
-    <!-- Section: Stories -->
-    <section id="stories">
-      <h2>Stories</h2>
+<!-- Section: Stories -->
+<section id="stories">
+  <h2>Stories</h2>
 
-      <article>
-        <h3>Building My First Forms</h3>
-        <p>I started with basic inputs and validation using required, minlength, and maxlength.
-           Connecting the form to a simple GET action helped me understand how data moves.</p>
-      </article>
+  <article>
+    <h3>Building My First Forms</h3>
+    <p>I started with basic inputs and validation using required, minlength, and maxlength.
+       Connecting the form to a simple GET action helped me understand how data moves.</p>
 
-      <article>
-        <h3>From Div Soup to Semantics</h3>
-        <p>Replacing generic divs with header, nav, main, section, and article
-           made the structure clearer and more accessible—screen readers love it!</p>
-      </article>
+    <!-- NEW -->
+    <figure>
+      <img src="https://picsum.photos/seed/forms/800/360"
+           alt="Skärmbild av ett enkelt HTML-formulär">
+      <figcaption>Mitt första formulär med validering i HTML.</figcaption>
+    </figure>
+  </article>
 
-      <article>
-        <h3>Pushing to GitHub</h3>
-        <p>Initialized a repo, committed my files, set the remote, and pushed to main.
-           Version control makes iterating on these pages so much easier.</p>
-      </article>
-    </section>
-  </main>
+  <article>
+    <h3>From Div Soup to Semantics</h3>
+    <p>Replacing generic divs with header, nav, main, section, and article
+       made the structure clearer and more accessible—screen readers love it!</p>
 
-  <footer>
-    <ul>
-      <li><a href="#archive">Archive</a></li>
-      <li><a href="#legal">Legal</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </footer>
-</body>
-</html>
+    <!-- NEW -->
+    <figure>
+      <img src="https://picsum.photos/seed/semantics/800/360"
+           alt="Illustration av semantiska HTML5-element">
+      <figcaption>Semantisk struktur gör koden lättare att förstå och navigera.</figcaption>
+    </figure>
+  </article>
+
+  <article>
+    <h3>Pushing to GitHub</h3>
+    <p>Initialized a repo, committed my files, set the remote, and pushed to main.
+       Version control makes iterating on these pages so much easier.</p>
+
+    <!-- NEW -->
+    <figure>
+      <img src="https://picsum.photos/seed/github/800/360"
+           alt="Terminalfönster som visar git-kommando och push">
+      <figcaption>Första pushen till GitHub – check!</figcaption>
+    </figure>
+  </article>
+</section>
