@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Museum Gallery</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Modern Arts Museum</h1>
+      <p>Curated highlights from our current collection.</p>
+    </header>
+
+    <hr />
+
+    <!-- Sticky toolbar (in flow) -->
+    <div class="toolbar">
+      <span>Gallery</span>
+      <button type="button">All</button>
+      <button type="button">Photography</button>
+      <button type="button">Paintings</button>
+      <button type="button">Sculpture</button>
+    </div>
+
+    <!-- Gallery grid (positioned container) -->
+    <section class="gallery" aria-label="image gallery">
+      <!-- Use your local images like src="images/01.jpg" if you prefer -->
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=900&auto=format&fit=crop" alt="Abstract color study" class="gallery-item" id="item-1" />
+      <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?q=80&w=900&auto=format&fit=crop" alt="Minimal sculpture" class="gallery-item" id="item-2" />
+      <img src="https://images.unsplash.com/photo-1473181488821-2d23949a045a?q=80&w=900&auto=format&fit=crop" alt="City photography" class="gallery-item" id="item-3" />
+      <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=900&auto=format&fit=crop" alt="Landscape painting" class="gallery-item" id="item-4" />
+      <img src="https://images.unsplash.com/photo-1504199367641-aba8151af406?q=80&w=900&auto=format&fit=crop" alt="Portrait painting" class="gallery-item" id="item-5" />
+      <img src="https://images.unsplash.com/photo-1526318474157-0f6c2f4d6c40?q=80&w=900&auto=format&fit=crop" alt="Monochrome hall" class="gallery-item" id="item-6" />
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=900&auto=format&fit=crop" alt="Museum interior" class="gallery-item" id="item-7" />
+      <img src="https://images.unsplash.com/photo-1458530970867-aaaa5c7da8f0?q=80&w=900&auto=format&fit=crop" alt="Geometric abstraction" class="gallery-item" id="item-8" />
+    </section>
+
+    <!-- Fixed badge (out of flow, stuck to viewport) -->
+    <div class="fixed-note">Open 10–18 • Wed Free</div>
+
+    <footer class="site-footer">
+      © 2025 Modern Arts Museum • Stockholm
+    </footer>
+  </body>
+</html>
