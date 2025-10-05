@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohammadreza — Personal Site</title>
+  <link href="C:\Users\moham\OneDrive\Skrivbord\webdevelopment\webdevelopment\personalwebsite.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Sticky nav header -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">MR</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hello, I’m <span>Mohammadreza</span>.</h1>
+        <p>
+          CS student & cybersecurity enthusiast. I build useful tools, clean UIs,
+          and learn in public.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="#about">About me</a>
+        </div>
+      </div>
+      <div class="hero-portrait" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <img class="about-photo" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=900&auto=format&fit=crop" alt="Profile photo" />
+        <div class="about-text">
+          <p>
+            I’m a second-year computer engineering student in Sweden, focusing on
+            web, math, and electronics. I enjoy building practical projects and
+            sharing what I learn.
+          </p>
+          <ul class="pill-list">
+            <li>HTML/CSS/JS</li>
+            <li>Git & GitHub</li>
+            <li>Linux</li>
+            <li>Matlab</li>
+            <li>Circuits/EE</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=900&auto=format&fit=crop" alt="Dashboard screenshot" />
+          <div class="card-body">
+            <h3>Study Dashboard</h3>
+            <p>Responsive dashboard that tracks tasks, spaced repetition, and notes.</p>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Demo</a>
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=900&auto=format&fit=crop" alt="CLI tool" />
+          <div class="card-body">
+            <h3>CLI Notes</h3>
+            <p>Lightweight terminal notes app with search and tags.</p>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Demo</a>
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card featured" id="featured">
+          <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=900&auto=format&fit=crop" alt="Security project" />
+          <div class="card-body">
+            <h3>NetMonitor</h3>
+            <p>Simple packet-sniffer & visualizer for learning network basics.</p>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Demo</a>
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want to collaborate, or just say hej? Send a message:</p>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="two-col">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+        </div>
+        <label>
+          Message
+          <textarea name="message" rows="6" placeholder="Tell me about your idea…" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Mohammadreza • Built with HTML & CSS</p>
+    <div class="social">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="X/Twitter">X</a>
+    </div>
+  </footer>
+
+  <script>
+    // tiny enhancement: current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

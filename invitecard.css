@@ -1,0 +1,46 @@
+/* 1️⃣ Wrapper – huvudrutan för hela inbjudan */
+#invite-wrapper {
+  width: 60%; /* mellan 25%–75% */
+  padding: 25px;
+  background-color: rgb(45, 45, 95); /* mörkblå bakgrund */
+  color: rgb(255, 255, 255); /* vit text */
+  border-radius: 12px; /* mjuka hörn */
+  margin: 40px auto; /* centrerar div:en på sidan */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* snygg skugga */
+}
+
+/* 2️⃣ Rubriken */
+h1 {
+  font-family: "Georgia", serif; /* vald font + fallback */
+  text-align: center;
+  font-size: 32px;
+  color: #f8d210; /* guldig ton */
+  margin-bottom: 20px;
+}
+
+/* 3️⃣ Textinnehåll */
+#invite-text {
+  width: 85%; /* mellan 75%–90% */
+  margin: 0 auto; /* centrerar textblocket */
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* 4️⃣ Datum och detaljer */
+#itinerary {
+  text-align: center;
+  margin-top: 25px;
+  font-style: italic;
+  color: #f0f0f0;
+}
+
+/* 5️⃣ Namnet längst ner */
+span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffb703;
+}
